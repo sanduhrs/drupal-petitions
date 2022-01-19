@@ -1,3 +1,0 @@
-.ck-content [lang]{outline:1px dotted gray;}.ck-content [lang]:after{content:" ("attr(lang)")";color:#666;font-size:10px;}
-.quickedit-editable,.quickedit-editing.ck.ck-editor__editable_inline{top:inherit !important;left:inherit !important;margin-bottom:inherit !important;}.quickedit-editing.ck.ck-editor__editable_inline > :first-child{margin-top:inherit;}
-.quickedit-toolgroup.wysiwyg-main .ck.ck-toolbar{border:none;background:none;}
