@@ -1,0 +1,38 @@
+uuid: 2f36352d-aef4-40c4-8613-0d163d799002
+langcode: de
+status: true
+dependencies: {  }
+id: ldapwaldorfone
+label: OpenLDAP
+type: openldap
+address: ldap.waldorf.one
+port: 389
+timeout: 10
+encryption: none
+weight: null
+bind_method: service_account
+binddn: 'cn=admin,dc=waldorf,dc=one'
+bindpw: '--1TCr0wd+'
+basedn:
+  - 'dc=waldorf,dc=one'
+user_attr: cn
+account_name_attr: cn
+mail_attr: ''
+mail_template: ''
+picture_attr: ''
+unique_persistent_attr: ''
+unique_persistent_attr_binary: false
+user_dn_expression: ''
+testing_drupal_username: ''
+testing_drupal_user_dn: ''
+grp_unused: false
+grp_object_cat: ''
+grp_nested: false
+grp_user_memb_attr_exists: false
+grp_user_memb_attr: ''
+grp_memb_attr: ''
+grp_memb_attr_match_user_attr: ''
+grp_derive_from_dn: false
+grp_derive_from_dn_attr: ''
+grp_test_grp_dn: ''
+grp_test_grp_dn_writeable: ''

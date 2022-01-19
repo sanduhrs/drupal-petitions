@@ -1,0 +1,85 @@
+uuid: 6f743660-e1b9-4e4a-88f3-3bdce06e5e4e
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.field.node.petition.body
+    - field.field.node.petition.field_email_appreciation
+    - field.field.node.petition.field_email_appreciation_subject
+    - field.field.node.petition.field_email_validation
+    - field.field.node.petition.field_email_validation_subject
+    - field.field.node.petition.layout_builder__layout
+    - node.type.petition
+  module:
+    - layout_builder
+    - layout_discovery
+    - spn
+    - text
+    - user
+  enforced:
+    module:
+      - spn
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: true
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+          context_mapping: {  }
+        components:
+          596867a8-ed12-4c82-8cdc-5333197310b5:
+            uuid: 596867a8-ed12-4c82-8cdc-5333197310b5
+            region: content
+            configuration:
+              id: 'field_block:node:petition:body'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: text_default
+                label: hidden
+                settings: {  }
+                third_party_settings: {  }
+            weight: 1
+            additional: {  }
+          ec50c253-a212-44b7-bd2b-1d8aa272c781:
+            uuid: ec50c253-a212-44b7-bd2b-1d8aa272c781
+            region: content
+            configuration:
+              id: petition_form_block
+              label: 'Petition Form Block'
+              label_display: visible
+              provider: spn
+              context_mapping: {  }
+            weight: 2
+            additional: {  }
+        third_party_settings: {  }
+_core:
+  default_config_hash: 9vUWDp6GSDEFA3VLxv7MK7ZyHJwohKMhGCd0RSCtXkw
+id: node.petition.default
+targetEntityType: node
+bundle: petition
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_email_appreciation: true
+  field_email_appreciation_subject: true
+  field_email_validation: true
+  field_email_validation_subject: true
+  langcode: true
+  layout_builder__layout: true

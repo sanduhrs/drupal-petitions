@@ -1,0 +1,9 @@
+name: 'LDAP'
+description: 'This is a meta file to increase compatiblity with other tools and the included submodules.'
+type: module
+core_version_requirement: ^8.7.7 || ^9
+hidden: true
+package: 'Lightweight Directory Access Protocol'
+
+dependencies:
+  - ldap:ldap_servers

@@ -1,0 +1,11 @@
+entity.ldap_server.collection:
+  route_name: entity.ldap_server.collection
+  title: 'Servers'
+  weight: 20
+  base_route: entity.ldap_server.collection
+
+ldap_servers.debug_settings:
+  route_name: ldap_servers.debug_settings
+  title: 'Debugging'
+  weight: 90
+  base_route: entity.ldap_server.collection

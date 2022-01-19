@@ -1,0 +1,15 @@
+_core:
+  default_config_hash: RSNbRD3ekSaZoE19f3eHhm93gKOcD2PtmaAVmV3XMes
+langcode: de
+transport: smtp
+smtp_host: mail.server.tld
+smtp_port: 587
+smtp_encryption: tls
+sendmail_path: /usr/sbin/sendmail
+sendmail_mode: bs
+smtp_credential_provider: swiftmailer
+smtp_credentials:
+  swiftmailer:
+    username: user@server.tld
+    password: password
+spool_directory: ''

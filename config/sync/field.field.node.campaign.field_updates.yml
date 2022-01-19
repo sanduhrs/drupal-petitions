@@ -1,0 +1,33 @@
+uuid: b663b6e7-8609-42ac-9960-788e3af1a07f
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_updates
+    - node.type.campaign
+  module:
+    - comment
+id: node.campaign.field_updates
+field_name: field_updates
+entity_type: node
+bundle: campaign
+label: Updates
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    status: 2
+    cid: 0
+    last_comment_timestamp: 0
+    last_comment_name: null
+    last_comment_uid: 0
+    comment_count: 0
+default_value_callback: ''
+settings:
+  default_mode: 1
+  per_page: 50
+  anonymous: 0
+  form_location: true
+  preview: 1
+field_type: comment

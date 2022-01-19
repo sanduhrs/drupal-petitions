@@ -1,0 +1,101 @@
+uuid: 614f33c1-fdd9-4931-933d-43de0080c79b
+langcode: de
+status: true
+dependencies:
+  config:
+    - core.entity_view_display.comment.comment.default
+    - field.field.node.campaign.body
+    - field.field.node.campaign.field_updates
+    - field.field.node.campaign.layout_builder__layout
+    - node.type.campaign
+  module:
+    - comment
+    - layout_builder
+    - layout_discovery
+    - stripe_campaign
+    - text
+    - user
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: true
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+          context_mapping: {  }
+        components:
+          9fa0b443-b089-4247-acda-5ba3af2f1b4f:
+            uuid: 9fa0b443-b089-4247-acda-5ba3af2f1b4f
+            region: content
+            configuration:
+              id: 'field_block:node:campaign:body'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: text_default
+                label: hidden
+                settings: {  }
+                third_party_settings: {  }
+            weight: 1
+            additional: {  }
+          79f12a6c-c10f-422b-9b0e-ce1e1ada091b:
+            uuid: 79f12a6c-c10f-422b-9b0e-ce1e1ada091b
+            region: content
+            configuration:
+              id: stripe_campaign
+              label: 'Jetzt unterstützen!'
+              label_display: visible
+              provider: stripe_campaign
+              context_mapping: {  }
+            weight: 2
+            additional: {  }
+          fe475d31-222a-4a49-9eb9-c1b991a7c479:
+            uuid: fe475d31-222a-4a49-9eb9-c1b991a7c479
+            region: content
+            configuration:
+              id: 'field_block:node:campaign:field_updates'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: comment_default
+                label: above
+                settings:
+                  view_mode: default
+                  pager_id: 0
+                third_party_settings: {  }
+            weight: 3
+            additional: {  }
+        third_party_settings: {  }
+id: node.campaign.default
+targetEntityType: node
+bundle: campaign
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_updates:
+    type: comment_default
+    label: above
+    settings:
+      view_mode: default
+      pager_id: 0
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  langcode: true
+  layout_builder__layout: true

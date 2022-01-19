@@ -1,0 +1,28 @@
+uuid: 16681e2f-dabf-4f05-a739-d469aef47d8a
+langcode: de
+status: true
+dependencies:
+  module:
+    - node
+    - stripe_campaign
+  theme:
+    - olivero
+id: saldo
+theme: olivero
+region: sidebar
+weight: -8
+provider: null
+plugin: stripe_campaign_saldo
+settings:
+  id: stripe_campaign_saldo
+  label: 'Aktueller Zwischenstand'
+  label_display: visible
+  provider: stripe_campaign
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      campaign: campaign

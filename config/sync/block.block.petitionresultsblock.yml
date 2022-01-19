@@ -1,0 +1,28 @@
+uuid: 8c3bd245-8faa-4dc5-9fd3-60d27be9ec4e
+langcode: de
+status: true
+dependencies:
+  module:
+    - node
+    - spn
+  theme:
+    - olivero
+id: petitionresultsblock
+theme: olivero
+region: sidebar
+weight: -6
+provider: null
+plugin: spn_results
+settings:
+  id: spn_results
+  label: 'The signatories'
+  label_display: visible
+  provider: spn
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      petition: petition

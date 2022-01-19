@@ -1,0 +1,10 @@
+name: 'LDAP Servers'
+description: 'Implements LDAP Server Configuration'
+type: module
+core_version_requirement: ^8.7.7 || ^9
+package: 'Lightweight Directory Access Protocol'
+
+configure: entity.ldap_server.collection
+
+dependencies:
+  - externalauth:externalauth
